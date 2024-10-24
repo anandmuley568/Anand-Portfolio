@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Profile</title>
+    <title>Anand Muley's Portfolio</title>
 
     <style>
         * {
@@ -15,9 +15,8 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            /* background: linear-gradient(to right, #f06, #ff9a00); */
-            background: white;
-            color: white;
+            background-color: #87CEEB; /* Sky blue background */
+            color: #333; /* Darker text for better readability */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -25,10 +24,24 @@
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9); /* Solid white background for contrast */
             padding: 20px;
             text-align: center;
+            position: relative;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align text */
+        }
+
+        /* Profile Picture Styling */
+        .profile-pic {
+            border-radius: 50%; /* Circular shape */
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff; /* White border for clean look */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for professional touch */
+            margin-bottom: 15px; /* Space below image */
         }
 
         section {
@@ -39,28 +52,29 @@
             align-items: center;
             text-align: center;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background to ensure text is visible */
+            margin: 20px; /* Adds spacing around the section */
+            border-radius: 10px; /* Soft border radius for professional look */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
         }
 
         footer {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.9); /* Solid background for contrast */
             padding: 20px;
             text-align: center;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        h1 {
-            font-size: 2.5em; /* Adjusted to 2.5em */
+        h1, h2 {
+            font-size: 2.5em;
             margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 2.5em; /* Adjusted to 2.5em */
-            margin-bottom: 10px;
+            color: #111; /* Darker heading color */
         }
 
         p {
             font-size: 1.2em;
             margin-bottom: 20px;
+            color: #555; /* Softer color for description */
         }
 
         ul {
@@ -69,20 +83,14 @@
             padding-left: 20px;
             text-align: left;
             font-size: 1.1em;
-        }
-
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-top: 20px;
+            color: #333; /* Ensure bullet points are visible */
         }
 
         .social-icons a {
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.5em;
-            color: white;
+            color: #333; /* Darker color for social links */
         }
 
         .social-icons a:hover {
@@ -93,27 +101,26 @@
 
 <body>
     <header>
-        <h1>Welcome to My GitHub Portfolio</h1>
-        <p>Hi, I'm Anand Muley, a software engineer with 2+ years of experience.</p>
-        <!-- Profile Picture -->
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> <!-- Profile Picture at the top -->
+        <h1>Welcome to Anand Muley Portfolio</h1>
+        <p>Hi, I'm Anand Muley, a dedicated software engineer with over 2 years of professional experience.</p>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I’m constantly learning new technologies. Here are some of the technologies I have experience with:</p>
+        <p>As a passionate full-stack developer, I thrive on building efficient, scalable, and user-friendly solutions. I have hands-on experience working across different platforms and technologies, always keen to enhance my skill set. Here are a few of the tools and technologies I've worked with:</p>
         <ul>
-            <li>Java, Golang, Python</li>
-            <li>Git, Gitlab</li>
-            <li>Docker, Kubernetes</li>
-            <li>MySQL, MongoDb, OracleDb</li>
-            <li>React, Angular, Node.js</li>
-            <li>Eclipse IDE, VSCode</li>
+            <li>Languages: Java, Golang, Python</li>
+            <li>Version Control: Git, Gitlab</li>
+            <li>DevOps: Docker, Kubernetes</li>
+            <li>Databases: MySQL, MongoDB, OracleDB</li>
+            <li>Frontend Frameworks: React, Angular, Node.js</li>
+            <li>Development Tools: Eclipse IDE, VSCode</li>
         </ul>
     </section>
 
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/anand-muley-loves-coding/" target="_blank">LinkedIn</a> and <a href="https://www.hackerrank.com/profile/anandmuley568" target="_blank">HackerRank</a>.</p>
+        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/anand-muley-loves-coding/" target="_blank">LinkedIn</a> or check out my coding challenges on <a href="https://www.hackerrank.com/profile/anandmuley568" target="_blank">HackerRank</a>.</p>
     </footer>
 </body>
 
