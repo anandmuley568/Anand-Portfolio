@@ -2,49 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anand Muley's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anand Muley's Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #87CEEB; /* Sky blue background */
-            color: #333; /* Darker text for better readability */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #87CEEB;
+      color: #FF6600;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-        header {
-            background-color: rgba(255, 255, 255, 0.9); /* Solid white background for contrast */
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center align text */
-        }
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        /* Profile Picture Styling */
-        .profile-pic {
-            border-radius: 50%; /* Circular shape */
-            width: 150px;
-            height: 150px;
-            border: 5px solid #fff; /* White border for clean look */
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for professional touch */
-            margin-bottom: 15px; /* Space below image */
-        }
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 5px solid #fff;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 15px;
+    }
 
-        section {
+    section {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -58,70 +57,125 @@
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
         }
 
-        footer {
-            background-color: rgba(255, 255, 255, 0.9); /* Solid background for contrast */
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
-        }
+    .card {
+      background-color: rgba(255, 255, 255, 0.8); /* Light card background */
+      margin: 10px; /* Spacing between cards */
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-        h1, h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #111; /* Darker heading color */
-        }
+.card-container {
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+        justify-content: space-between; /* Space cards evenly */
+    }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: #555; /* Softer color for description */
-        }
+    h1, h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #0099FF;
+    }
 
-        ul {
-            list-style-type: disc;
-            margin: 20px 0;
-            padding-left: 20px;
-            text-align: left;
-            font-size: 1.1em;
-            color: #333; /* Ensure bullet points are visible */
-        }
+    p {
+      margin: 10px 0;
+      font-size: 1.1em;
+      color: #333; /* Ensure text is visible */
+    }
 
-        .social-icons a {
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.5em;
-            color: #333; /* Darker color for social links */
-        }
+    ul {
+      list-style-type: none; /* Remove bullet points */
+      padding: 0; /* Remove default padding */
+      margin: 10px 0; /* Margin for list items */
+    }
 
-        .social-icons a:hover {
-            color: #ff9a00;
-        }
-    </style>
+    li {
+      margin-bottom: 5px;
+      color: #333; /* Ensure text is visible */
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .social-icons a:hover {
+      color: #ff9a00;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> <!-- Profile Picture at the top -->
-        <h1>Welcome to Anand Muley Portfolio</h1>
-        <p>Hi, I'm Anand Muley, a dedicated software engineer with over 2 years of professional experience.</p>
-    </header>
+  <header>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Welcome to Anand Muley Portfolio</h1>
+    <p>Hi, I'm Anand Muley, a dedicated software engineer with over 2.5 years of IT experience and 2 years of non IT experience, So combined experience is 4.5 years.</p>
+	<p> 
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>As a passionate full-stack developer, I thrive on building efficient, scalable, and user-friendly solutions. I have hands-on experience working across different platforms and technologies, always keen to enhance my skill set. Here are a few of the tools and technologies I've worked with:</p>
-        <ul>
-            <li>Languages: Java, Golang, Python</li>
-            <li>Version Control: Git, Gitlab</li>
-            <li>DevOps: Docker, Kubernetes</li>
-            <li>Databases: MySQL, MongoDB, OracleDB</li>
-            <li>Frontend Frameworks: React, Angular, Node.js</li>
-            <li>Development Tools: Eclipse IDE, VSCode</li>
-        </ul>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>As a passionate full-stack developer, I thrive on building efficient, scalable, and user-friendly solutions. I have hands-on experience working across different platforms and technologies, always keen to enhance my skill set. Here are a few of the tools and technologies I've worked with:</p>
 
-    <footer>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/anand-muley-loves-coding/" target="_blank">LinkedIn</a> or check out my coding challenges on <a href="https://www.hackerrank.com/profile/anandmuley568" target="_blank">HackerRank</a>.</p>
-    </footer>
-</body>
+    <div class="card-container">
+        <div class="card">
+            <h3>Languages</h3>
+            <ul>
+                <li>Java</li>
+                <li>Golang</li>
+                <li>Python</li>
+		<li>C</li>
+		<li>C++</li>
+            </ul>
+        </div>
 
-</html>
+        <div class="card">
+            <h3>Version Control</h3>
+            <ul>
+                <li>Git</li>
+                <li>Gitlab</li>
+		<li>Github</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>DevOps</h3>
+            <ul>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+		<li>AWS</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Databases</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>OracleDB</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Frontend Frameworks</h3>
+            <ul>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Development Tools</h3>
+            <ul>
+		<li>VSCode</li>
+                <li>Eclipse IDE</li>
+		<li>Intellij</li>
+		<li>STS</li>
+            </ul>
+        </div>
+    </div>
+</section>
